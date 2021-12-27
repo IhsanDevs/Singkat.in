@@ -143,12 +143,65 @@ Sebelum menjalankan aplikasi ini, silahkan dicek apakah daftar software pendukun
     ```sh
     php artisan db:seed
     ```
-8. Jalankan aplikasi
+8. Buka file `vendor/ashallendesign/short-url/src/Models/ShortURL.php` tambahkan class berikut:
+    ```php
+    use App\Models\User;
+    ```
+    Setelah itu buat method relationship agar terhubung ke model `User`:
+    ```php
+        public function User()
+    {
+        return $this->hasMany(User::class);
+    }
+    ```
+    Kemudian ubah nilai dari property `$fillable` dari :
+    ```php
+    protected $fillable = [
+        'destination_url',
+        'default_short_url',
+        'url_key',
+        'single_use',
+        'forward_query_params',
+        'track_visits',
+        'redirect_status_code',
+        'track_ip_address',
+        'track_operating_system',
+        'track_operating_system_version',
+        'track_browser',
+        'track_browser_version',
+        'track_referer_url',
+        'track_device_type',
+        'activated_at',
+        'deactivated_at'
+    ];
+    ```
+    menjadi:
+    ```php
+    protected $fillable = [
+        'destination_url',
+        'default_short_url',
+        'url_key',
+        'single_use',
+        'forward_query_params',
+        'track_visits',
+        'redirect_status_code',
+        'track_ip_address',
+        'track_operating_system',
+        'track_operating_system_version',
+        'track_browser',
+        'track_browser_version',
+        'track_referer_url',
+        'track_device_type',
+        'activated_at',
+        'deactivated_at',
+        'user_id'
+    ];
+    ```
+9. Jalankan aplikasi
 
     ````sh
      php artisan serve
      ```
-
     ````
 
 <p align="right">(<a href="#top">back to top</a>)</p>
