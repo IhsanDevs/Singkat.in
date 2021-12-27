@@ -147,9 +147,10 @@ Sebelum menjalankan aplikasi ini, silahkan dicek apakah daftar software pendukun
     ````sh
      php artisan serve
      ```
-    <p align="right">(<a href="#top">back to top</a>)</p>
+
     ````
 
+<p align="right">(<a href="#top">back to top</a>)</p>
 <!-- USAGE EXAMPLES -->
 
 ## Usage
