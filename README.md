@@ -6,7 +6,7 @@
     <img src="assets/singkat.in.png" alt="Logo">
   </a>
 
-  <h3 align="center">Singkat.in</h3>
+  <h1 align="center">Singkat.in</h1>
 
   <p align="center">
     Aplikasi open-source URL Shortener berbasis laravel
