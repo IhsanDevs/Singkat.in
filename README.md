@@ -6,8 +6,6 @@
     <img src="assets/singkat.in.png" alt="Logo">
   </a>
 
-  <h1 align="center">Singkat.in</h1>
-
   <p align="center">
     Aplikasi open-source URL Shortener berbasis laravel
     <br />
@@ -199,10 +197,9 @@ Sebelum menjalankan aplikasi ini, silahkan dicek apakah daftar software pendukun
     ```
 9. Jalankan aplikasi
 
-    ````sh
+    ```sh
      php artisan serve
-     ```
-    ````
+    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 <!-- USAGE EXAMPLES -->
