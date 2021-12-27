@@ -198,7 +198,7 @@ Jika kamu memiliki saran yang akan membuat project ini lebih baik, silakan fork 
 
 ## License
 
-Dibuat dibawah lisensi GPL. Lihat [`LICENSE`](assets/LICENSE) untuk info lebih lanjut.
+Dibuat dibawah lisensi GPL. Lihat [`LICENSE`](assets/LICENSE.txt) untuk info lebih lanjut.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
